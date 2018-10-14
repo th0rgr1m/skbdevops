@@ -50,12 +50,6 @@ if ($GitAlias.count -lt 1)
     New-Alias -Name nuget -Value "$Env:ProgramFiles\Nuget\nuget.exe"
 }
 
-# Create target directory if it doesn't exist
-if (-Not(Test-Path -Path $TargetDirectory))
-{
-    New-Item -ItemType Directory -Path $TargetDirectory
-}
-
 
 # First receiving of project files
 
